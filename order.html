@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Product</title>
+<link rel="stylesheet" href="assets/order.css">
+</head>
+<body>
+  <div class="order-container">
+    <h2>Order Your Product</h2>
+    <form id="orderForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="product">Product</label>
+      <select id="product" required>
+        <option value="">Select Product</option>
+        <option value="coconut water">Coconut Water</option>
+        <option value="coconut milk">Coconut Milk</option>
+        <option value="coconut oil">Coconut Oil</option>
+        <option value="coconut cover">Coconut Shell</option>
+        <option value="Trycoconut">DryCoconut</option>
+        <option value="coconut husk">Coconut husk</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" placeholder="Delivery Address" required></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+    <p id="confirmation" class="confirmation"></p>
+  </div>
+
+  <script src="order.js"></script>
+</body>
+</html>
