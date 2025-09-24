@@ -202,12 +202,5 @@
   font-size: 13px;
   color: #aaa;
 }
-@media(max-width:768px){
-  body{
-    display: none;
-    width: 100%;
-    position: absolute;
-    
-  }
-}
+
 
